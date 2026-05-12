@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reelwise — AI Movie Recommendations</title>
+  <meta name="description" content="Discover your next favourite film with AI-powered recommendations tailored to your mood." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+
+  <!-- Tabler Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.x/tabler-icons.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="app">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-inner">
+        <div class="logo">
+          <span class="logo-dot"></span>
+          Reelwise
+        </div>
+        <span class="header-tagline">AI-Powered Cinema</span>
+      </div>
+
+      <!-- Mood Bar -->
+      <div class="mood-bar" role="group" aria-label="Filter by mood">
+        <button class="mood-pill active" data-mood="">All moods</button>
+        <button class="mood-pill" data-mood="feel-good and uplifting">Feel-good</button>
+        <button class="mood-pill" data-mood="dark and intense">Dark &amp; Intense</button>
+        <button class="mood-pill" data-mood="mind-bending and thought-provoking">Mind-bending</button>
+        <button class="mood-pill" data-mood="funny and comedic">Comedy</button>
+        <button class="mood-pill" data-mood="romantic and heartfelt">Romance</button>
+        <button class="mood-pill" data-mood="action-packed and thrilling">Action</button>
+        <button class="mood-pill" data-mood="scary and suspenseful">Horror</button>
+        <button class="mood-pill" data-mood="adventurous and epic">Epic Adventure</button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+
+      <!-- Search Row -->
+      <div class="search-row">
+        <div class="search-box">
+          <i class="ti ti-search search-icon" aria-hidden="true"></i>
+          <input
+            id="searchInput"
+            type="text"
+            placeholder='e.g. "sci-fi like Arrival" or "heist movies"'
+            aria-label="Search for movies"
+            autocomplete="off"
+          />
+        </div>
+        <button class="btn-primary" id="searchBtn" aria-label="Discover movies">
+          <i class="ti ti-sparkles" aria-hidden="true"></i>
+          Discover
+        </button>
+      </div>
+
+      <!-- Detail Panel (hidden by default) -->
+      <div id="detailPanel" class="detail-panel" role="region" aria-label="Movie details" aria-hidden="true"></div>
+
+      <!-- Results / Empty State -->
+      <div id="mainContent">
+        <div class="empty-state">
+          <div class="empty-icon"><i class="ti ti-movie" aria-hidden="true"></i></div>
+          <h2 class="empty-title">What do you want to watch tonight?</h2>
+          <p class="empty-sub">Search for films, describe your mood, or pick a vibe above.</p>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="status-bar">
+      <span class="status-dot"></span>
+      <span>Claude AI recommendations</span>
+      <span class="status-version">Reelwise v1.0</span>
+    </footer>
+
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
