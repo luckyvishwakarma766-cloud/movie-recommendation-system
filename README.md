@@ -1,6 +1,6 @@
-# 🎬 Reelwise — AI Movie Recommendation System
+ Movie Recommendation System
 
-A cinematic, AI-powered movie discovery website built with vanilla HTML, CSS, and JavaScript. Uses the **Anthropic Claude API** to deliver personalised film recommendations based on your mood, genre preferences, or natural-language descriptions.
+A cinematic, movie discovery website built with vanilla HTML, CSS, and JavaScript. Uses the  Claude API** to deliver personalised film recommendations based on your mood, genre preferences, or natural-language descriptions.
 
 ![Reelwise Preview](https://img.shields.io/badge/status-ready-brightgreen) ![HTML](https://img.shields.io/badge/HTML5-orange) ![CSS3](https://img.shields.io/badge/CSS3-blue) ![JavaScript](https://img.shields.io/badge/JS-ES6+-yellow)
 
