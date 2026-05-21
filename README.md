@@ -117,4 +117,4 @@ MIT — free to use, modify, and distribute.
 
 ## 🙏 Credits
 
-Built with [Anthropic Claude](https://anthropic.com) · Designed with a cinematic dark aesthetic
+Built with passion and little bit use of ai · Designed with a cinematic dark aesthetic
